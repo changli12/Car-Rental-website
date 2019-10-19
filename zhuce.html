@@ -1,0 +1,125 @@
+﻿<head>
+<script>
+function Name()
+{name1=document.getElementById("name").value;
+if(name1=="") 
+   alert("请输入您的姓名！")
+}
+function password()
+{mima1=document.getElementById("mima").value;
+if(mima1=="") 
+     alert("请输入您的密码！");
+else 
+     if(!/[a-z]/.test(mima1) && !/[A-Z]/.test(mima1)&&!/[0-9]/.test(mima1))alert( "密码只允许输入a-z,A-Z,0-9的字符。");
+}
+function F1()
+{
+mima1=document.getElementById("mima").value;
+mima2=document.getElementById("remima").value;
+
+if(mima1==mima2)
+  alert("密码一致！ok")
+else
+  alert("密码不一致") 
+}
+function phone()
+{phone=document.getElementById("phonenumber").value;
+if(phone=="") 
+     alert( "请输入您的手机号码！");
+else if(!/[0-9]/.test(phone))
+     alert( "手机号码只允许输入0-9的字符。");
+}
+function email1()
+{email=document.getElementById("email2").value;
+if(email=="") 
+	alert("请输入您的电子邮件地址！");
+else if(!((email.indexOf(".")>0)&&(email.indexOf("@")>0))||/[^a-zA-Z0-9.@_-]/.test(email))
+     alert( "电子邮件地址不正确");
+
+}
+</script>
+</head>
+<center>
+<br><br><br><br>
+<h1 color=blue>
+<h1>
+欢迎注册！
+</h1>
+
+<br><br>
+<form method="post" action="zhuce.php" onSubmit="return validate(this)">
+<table border=1>
+<tr>
+<td>您的真实姓名是：</td>
+<td><input type=text name=name id=name onblur="Name();"></td>
+</tr>
+<tr>
+<td>性别：</td>
+<td><input type=radio name=xb value="男">男<input type=radio name=xb value="女">女</td>
+</tr>
+<tr>
+<td>手机号码:</td>
+<td><input type=text name=phonenumber id=phonenumber maxlength=11 onblur="phone();"></td>
+</tr>
+<tr>
+<tr>
+<td>电子邮箱:</td>
+<td><input type=text name=email id=email2 onblur="email1();"></td>
+</tr>
+<tr>
+<tr>
+<td>密码:</td>
+<td><input type=password name=mima id=mima maxlength=6 onblur="password();"></td>
+</tr>
+<td>确认密码：</td>
+<td><input type=password id=remima maxlength=6 onblur="F1();"></td>
+</tr>
+
+<tr>
+<td>租车所在地：</td>
+<td>
+<select name=address>
+<option value="0"></option>
+<option value="1">河北省</option>
+<option value="2">山西省</option>
+<option value="3">辽宁省</option>
+<option value="4">吉林省</option>
+<option value="5">黑龙江省</option>
+<option value="6">江苏省</option>
+<option value="7">浙江省</option>
+<option value="8">安徽省</option>
+<option value="9">福建省</option>
+<option value="10">江西省</option>
+<option value="11">山东省</option>
+<option value="12">河南省</option>
+<option value="13">湖北省</option>
+<option value"14">湖南省</option>
+<option value="15">广东省</option>
+<option value="16">海南省</option>
+<option value="17">四川省</option>
+<option value="18">贵州省</option>
+<option value="19">云南省</option>
+<option value="20">陕西省</option>
+<option value="21">甘肃省</option>
+<option value="22">青海省</option> 
+<option value="23">台湾省</option>
+<option value="24">北京市</option>
+<option value="25">天津市</option>
+<option value="26">上海市</option>
+<option value="27">重庆市市</option>  
+<option value="28">广西壮族自治区</option>
+<option value="29">内蒙古自治区</option>
+<option value="30">西藏自治区</option>
+<option value="31">宁夏回族自治区</option>
+<option value="32">新疆维吾尔族自治区</option>
+<option value="33">香港特别行政区</option>
+<option value="34">澳门特别行政区</option>
+</td>
+</tr>
+</table>
+
+<input type=submit value=注册>
+<input type=reset value=重填>
+<body background=http://img5.imgtn.bdimg.com/it/u=3335148185,4231888312&fm=21&gp=0.jpg>
+</form>
+<center>

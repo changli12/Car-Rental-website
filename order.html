@@ -1,0 +1,223 @@
+﻿<?php
+session_start();
+if(isset($_SESSION['usename'])):
+?>
+<head>
+<script>
+function price()
+{
+tianshu1=document.getElementById("tianshu").value;
+if(tianshu1=="") 
+   alert("请输入租车天数！")
+else if(!/[0-9]/.test(tianshu1))
+     alert( "租车天数只允许输入0-9的字符。");
+
+}
+</script>
+</head>
+<body bgcolor=#E6E6FA>
+<center>
+<br><br>
+<h1 color=blue>
+<h1>
+订单填写
+</h1>
+<br><br><form method="post" action="order.php">
+<table>
+<tr>
+<td><img src=http://image.zuchecdn.com/newversion/mode/87_b.jpg width=200 helight=200>
+</td>
+<td><img src=http://image.zuchecdn.com/newversion/mode/101_b.jpg width=200 helight=200>
+</td>
+<td><img src=http://image.zuchecdn.com/newversion/news/order/ky.jpg width=200 helight=200>
+</td>
+<td><img src=http://image.zuchecdn.com/newversion/news/order/k2.jpg width=200 helight=200>
+</td>
+</tr>
+<tr>
+<td><input type=radio name=clnum value="1">雪佛兰科鲁兹
+</td>
+<td><input type=radio name=clnum value=2>大众朗逸
+</td>
+<td><input type=radio name=clnum value=3>别克凯越
+</td>
+<td><input type=radio name=clnum value=4>起亚K2
+</td>
+</tr>
+<tr>
+<td>三厢/1.6自动/乘坐五人
+</td>
+<td>三厢/1.6自动/乘坐五人
+</td>
+<td>三厢/1.6自动/乘坐五人
+</td>
+<td>三厢/1.4自动/乘坐五人
+</td>
+</tr>
+<tr>
+<td>149/天    <strike>180</strike>天
+</td>
+<td>158/天    <strike>190</strike>天
+</td>
+<td>109/天    <strike>130</strike>天
+</td>
+<td>119/天    <strike>140</strike>天
+</td>
+</tr>
+<tr>
+<td>总价：16万
+</td>
+<td>总价：18万
+</td>
+<td>总价：19万
+</td>
+<td>总价：20万
+</td>
+</tr>
+<tr>
+<td><img src=http://image.zuchecdn.com/newversion/news/order/FTZX.jpg width=200 helight=200>
+</td>
+<td><img src=http://image.zuchecdn.com/newversion/news/order/2014ALS.jpg width=200 helight=200>
+</td>
+<td><img src=http://image.zuchecdn.com/newversion/news/order/MR3.jpg width=200 helight=200>
+</td>
+<td><img src=http://image.zuchecdn.com/newversion/news/order/kmr.jpg width=200 helight=200>
+</td>
+</tr>
+<tr>
+<td><input type=radio name=clnum value=5>丰田致炫
+</td>
+<td><input type=radio name=clnum value=6>雪铁龙爱丽舍
+</td>
+<td><input type=radio name=clnum value=7>大众斯柯达明锐
+</td>
+<td><input type=radio name=clnum value=8>丰田凯美瑞
+</td>
+</tr>
+<tr>
+<td>三厢/1.3自动/乘坐五人
+</td>
+<td>三厢/1.6自动/乘坐五人
+</td>
+<td>三厢/1.6自动/乘坐五人
+</td>
+<td>三厢/2.0自动/乘坐五人
+</td>
+</tr>
+<tr>
+<td>78/天    <strike>139</strike>天
+</td>
+<td>139/天    <strike>155</strike>天
+</td>
+<td>158/天    <strike>180</strike>天
+</td>
+<td>149/天    <strike>180</strike>天
+</td>
+</tr>
+<tr>
+<td>总价：16万
+</td>
+<td>总价：17万
+</td>
+<td>总价：18万
+</td>
+<td>总价：19万
+</td>
+</tr>
+<tr>
+<td><img src=http://image.zuchecdn.com/newversion/news/order/YB.jpg width=200 helight=200>
+</td>
+<td><img src=http://image.zuchecdn.com/newversion/news/order/sport.jpg width=200 helight=200>
+</td>
+<td><img src=http://image.zuchecdn.com/newversion/news/order/SLJC.jpg width=200 helight=200>
+</td>
+<td><img src=http://image.zuchecdn.com/newversion/news/order/HighLander.jpg width=200 helight=200>
+</td>
+</tr>
+<tr>
+<td><input type=radio name=clnum value=9>福特翼搏
+</td>
+<td><input type=radio name=clnum value=10>起亚狮跑
+</td>
+<td><input type=radio name=clnum value=11>三菱帕杰罗
+</td>
+<td><input type=radio name=clnum value=12>丰田汉兰达
+</td>
+</tr>
+<tr>
+<td>SUV/1.6自动/乘坐五人
+</td>
+<td>SUV/1.6自动/乘坐五人
+</td>
+<td>SUV/1.6自动/乘坐五人
+</td>
+<td>SUV/1.6自动/乘坐五人
+</td>
+</tr>
+<tr>
+<td>216/天    <strike>309</strike>天
+</td>
+<td>402/天    <strike>532</strike>天
+</td>
+<td>530/天    <strike>601</strike>天
+</td>
+<td>739/天    <strike>900</strike>天
+</td>
+</tr>
+<tr>
+<td>总价：30万
+</td>
+<td>总价：31万
+</td>
+<td>总价：32万
+</td>
+<td>总价：40万
+</td>
+</tr>
+</table>
+<br><br>
+
+<table border=#483D8B>
+
+<tr>
+<td>您的提车方式：</td>
+<td><input type=radio name="fs" value="1">送车上门<br>租车地址：<input type=text name=zuchead id=zuchead maxlength=20><br>
+<input type=radio name="fs" value="2">门店自提<br>
+门店地址：<select name="mdad">
+<option value="0"></option>
+<option value="朝阳区门店">朝阳区门店</option>
+<option value="东城区门店">东城区门店</option>
+<option value="西城区门店">西城区门店</option>
+<option value="海淀区门店">海淀区门店</option>
+<option value="昌平区门店">昌平区门店</option>
+<option value="丰台区门店">丰台区门店</option>
+</td></td>
+</tr>
+<tr>
+<td>租车人手机号：</td>
+<td><input type=text name="phonenumber" id=phonenumber maxlength=11>
+</tr>
+<tr>
+<tr>
+<td>提车日期与时间：</td>
+<td><input type=date name="zcdate"></td>
+</tr>
+<tr>
+<tr>
+<td>租车天数：</td>
+<td><input type=text name="tianshu" id=tianshu onblur="price();" ></td>
+</tr>
+<td>支付方式：</td>
+<td><input type=radio name="zffs" value="现金支付">现金支付<br><input type=radio name=zffs value="在线支付">在线支付</td>
+</tr>
+</table>
+<br><br>
+<input style=" font-size:100%; width:150px; height:44px; border:#008B8B 1px solid; background:#6495ED; color:#FFF" type=submit value=确认租车>
+<A href=http://192.168.31.129:801/index.html><input style=" font-size:100%; width:150px; height:44px; border:#008B8B 1px solid; background:#6495ED; color:#FFF" type=button value=取消></href>
+<body background=http://imgtest-dl.meiliworks.com/pic/_o/36/ca/e5c2d69a6156b6db169a04626f91_1280_800.jpg>
+</form>
+<br><br><br><br><br>
+<center>
+<?php else: ?><a href=denglu.html>请先登录</a>
+<?php endif ?>
+</body>
